@@ -21,6 +21,7 @@ class MyTest(unittest.TestCase):
 		matrix = Matrix(1,2,3,4)
 		matrix2 = Matrix(1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7)
 		self.assertRaises(ValueError, matrix.add(matrix2))
+
 	def test_size(self):
-		self.assertEquals(2, Matrix(1,2,3,4))
-		self.assertEquals(4, Matrix(1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7))
+		self.assertEquals(2, Matrix(1,2,3,4).size())
+		self.assertEquals(4, Matrix(1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7).size())
